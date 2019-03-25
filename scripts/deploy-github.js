@@ -5,7 +5,7 @@ ghpages.publish(
   'public',
   {
     branch: 'master',
-    repo: 'https://github.com/openbook/openbook.github.io.git',
+    repo: 'https://github.com/openbook/andybrace.com.git',
   },
   () => {
     console.log('Deploy Complete!')
