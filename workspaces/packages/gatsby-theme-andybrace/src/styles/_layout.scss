@@ -1,0 +1,28 @@
+#header {
+  padding: 8em 4em;
+  display: flex;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -moz-align-items: -moz-flex-end;
+  -ms-align-items: -ms-flex-end;
+  align-items: flex-end;
+  padding: 8em 4em;
+}
+
+#___gatsby,
+#___gatsby > div {
+  height: 100%;
+}
+
+.main {
+  padding-left: 0;
+  height: 100%;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.blue {
+  background-color: $primary-color;
+}

@@ -1,1 +1,1 @@
-export { default as Grid } from './src/components/Grid';
+export { Grid } from './src/components';

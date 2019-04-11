@@ -1,69 +1,25 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
 
-class Layout extends React.Component {
+import Header from '../Header'
+
+class Template extends React.Component {
   render() {
-    const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
-    let header
+    const { children } = this.props
 
-    if (location.pathname === rootPath) {
-      header = (
-        <h1
-          style={{
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h1>
-      )
-    } else {
-      header = (
-        <h3
-          style={{
-            fontFamily: `Montserrat, sans-serif`,
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h3>
-      )
-    }
     return (
-      <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-        }}
-      >
-        <header>{header}</header>
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+      <div className="container main">
+        <div className="columns col-gapless h100">
+          <div className="column col-6 col-sm-12 blue h100">
+            <Header />
+          </div>
+          <div className="column col-6 col-sm-12">
+
+            {children}
+          </div>
+        </div>
       </div>
     )
   }
 }
 
-export default Layout
+export default Template

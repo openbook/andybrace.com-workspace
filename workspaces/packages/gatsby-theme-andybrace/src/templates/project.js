@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import MDXRenderer from "gatsby-mdx/mdx-renderer"
 
-import { Bio, Layout, SEO } from "../components"
+import { Layout, SEO } from "../components"
 
 class ProjectTemplate extends React.Component {
   render() {
@@ -29,7 +29,6 @@ class ProjectTemplate extends React.Component {
           {post.code.body}
         </MDXRenderer>
         <hr/>
-        <Bio />
 
         <ul
           style={{

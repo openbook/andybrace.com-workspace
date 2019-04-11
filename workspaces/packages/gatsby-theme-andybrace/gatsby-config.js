@@ -4,10 +4,13 @@ module.exports = {
   siteMetadata: {
     title: `Andy Brace`,
     author: `Andy Brace`,
-    description: `A portfolio site theme.`,
+    description: `I help scope, plan, prototype and deliver agile web projects.`,
+    role: `Full-stack web developer based in London`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
-    social: {
-      twitter: `kylemathews`,
+    links: {
+      github: `openbook`,
+      linkedIn: 'openbook',
+      email: 'hello@openbook.uk.com'
     },
   },
   plugins: [

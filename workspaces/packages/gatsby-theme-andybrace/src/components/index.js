@@ -1,15 +1,17 @@
 /* @flow */
 
-import Bio from './Bio';
 import Box from './Box';
 import Grid from './Grid';
+import Header from './Header';
 import Layout from './Layout';
+import Navbar from './Navbar';
 import SEO from './SEO';
 
 export {
-  Bio,
   Box,
   Grid,
+  Header,
   Layout,
+  Navbar,
   SEO
 };

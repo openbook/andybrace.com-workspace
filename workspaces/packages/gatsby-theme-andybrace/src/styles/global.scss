@@ -1,7 +1,7 @@
-body {
-  background-color: lightgrey;
-}
-
-.test {
-  font-weight: 700
-}
+html, body { margin:0; padding: 0; }
+// https://picturepan2.github.io/spectre/
+@import "variables";
+@import "../node_modules/spectre.css/src/layout";
+@import "base";
+@import "layout";
+@import "typography";
