@@ -9,8 +9,6 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
-import { rhythm, scale } from "../../utils/typography"
-
 function Bio() {
   return (
     <StaticQuery
@@ -21,7 +19,6 @@ function Bio() {
           <div
             style={{
               display: `flex`,
-              marginBottom: rhythm(2.5),
             }}
           >
             <p>
