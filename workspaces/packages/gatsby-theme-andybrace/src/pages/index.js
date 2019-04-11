@@ -1,11 +1,13 @@
 import React from "react";
-import { Grid } from 'gatsby-theme-andybrace';
+import { Grid } from '../components'
 import { Link, graphql } from "gatsby"
 
 export default ({data}) => (
   <Grid>
     {console.log(data)}
-    <h1>This is overriden</h1>
+    <h1>About {data.site.siteMetadata.title}</h1>
+    <p className={'test'}>Hello Gatsby 123</p>
+    <h4>{data.allMdx.totalCount} Posts</h4>
     {data.allMdx.edges.map(({ node }) => (
       <div key={node.id}>
         <Link
