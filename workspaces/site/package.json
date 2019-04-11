@@ -1,5 +1,5 @@
 {
-  "name": "homepage-gatsby",
+  "name": "site",
   "private": true,
   "description": "Gatsby based homepage",
   "version": "0.1.0",
@@ -8,8 +8,11 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "@mdx-js/mdx": "^0.20.3",
+    "@mdx-js/tag": "^0.20.3",
     "gatsby": "^2.2.10",
     "gatsby-image": "^2.0.34",
+    "gatsby-mdx": "^0.4.5",
     "gatsby-plugin-feed": "^2.1.0",
     "gatsby-plugin-google-analytics": "^2.0.17",
     "gatsby-plugin-manifest": "^2.0.24",
@@ -26,6 +29,7 @@
     "gatsby-source-filesystem": "^2.0.28",
     "gatsby-transformer-remark": "^2.3.8",
     "gatsby-transformer-sharp": "^2.1.17",
+    "gatsby-theme-andybrace": "*",
     "node-sass": "^4.11.0",
     "prismjs": "^1.16.0",
     "react": "^16.8.5",
@@ -53,7 +57,7 @@
   },
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop --host 0.0.0.0",
     "deploy:github": "npm run build && node ./scripts/deploy-github",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",

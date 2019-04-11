@@ -8,8 +8,8 @@ export default ({data}) => (
     {console.log(data)}
     <h1>About {data.site.siteMetadata.title}</h1>
     <p className={'test'}>Hello Gatsby 123</p>
-    <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
-    {data.allMarkdownRemark.edges.map(({ node }) => (
+    <h4>{data.allMdx.totalCount} Posts</h4>
+    {data.allMdx.edges.map(({ node }) => (
       <div key={node.id}>
         <Link
           to={node.fields.slug}>
@@ -33,7 +33,7 @@ export const query = graphql`
         title
       }
     },
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
         node {
