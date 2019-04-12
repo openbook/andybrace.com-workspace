@@ -32,6 +32,10 @@ a {
   outline: none;
   text-decoration: none;
 
+  &.active {
+    font-weight: bold;
+  }
+
   &:focus,
   &:hover,
   &:active,

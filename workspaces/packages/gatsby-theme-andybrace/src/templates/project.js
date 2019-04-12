@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import Img from "gatsby-image";
 
 import MDXRenderer from "gatsby-mdx/mdx-renderer"
 
@@ -16,6 +17,7 @@ class ProjectTemplate extends React.Component {
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
+          location={'test'}
         />
         <h1>{post.frontmatter.title}</h1>
         <p
@@ -25,6 +27,7 @@ class ProjectTemplate extends React.Component {
         >
           {post.frontmatter.date}
         </p>
+        {post.frontmatter.image && <Img fluid={post.frontmatter.image.childImageSharp.fluid} />}
         <MDXRenderer>
           {post.code.body}
         </MDXRenderer>
@@ -80,6 +83,13 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        image {
+         childImageSharp {
+           fluid(maxWidth: 630, quality: 100) {
+              ...GatsbyImageSharpFluid
+           }
+         }
+       }
       }
     }
   }

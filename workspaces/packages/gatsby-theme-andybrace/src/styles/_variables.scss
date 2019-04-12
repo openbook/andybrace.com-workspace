@@ -39,6 +39,7 @@ $body-font-color: lighten($dark-color, 5%) !default;
 $link-color: #980000 !default;
 $link-color-dark: #980000 !default;
 $link-color-light: lighten($link-color, 10%) !default;
+$subheading-color: hsl(210, 72%, 20%);
 
 // Fonts
 // Credit: https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
@@ -92,7 +93,7 @@ $control-padding-x-lg: $unit-2 * 1.5 !default;
 $control-padding-y: ($control-size - $line-height) / 2 - $border-width !default;
 $control-padding-y-sm: ($control-size-sm - $line-height) / 2 - $border-width !default;
 $control-padding-y-lg: ($control-size-lg - $line-height) / 2 - $border-width !default;
-$control-icon-size: .8rem !default;
+$control-icon-size: 1.2rem !default;
 
 $control-width-xs: 180px !default;
 $control-width-sm: 320px !default;

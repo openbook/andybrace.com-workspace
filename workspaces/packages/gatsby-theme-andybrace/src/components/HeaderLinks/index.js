@@ -6,10 +6,24 @@ class HeaderLinks extends React.Component {
     return (
       <div id="footer">
         <div className="inner">
-          <ul className="icons">
-            <li><a href="#" className="icon fa-github"><span className="label">{github}</span></a></li>
-            <li><a href="#" className="icon fa-envelope-o"><span className="label">{email}</span></a></li>
-            <li><a href="#" className="icon fa-envelope-o"><span className="label">{linkedIn}</span></a></li>
+          <ul className={'list-inline--spaced mx-0 px-0'}>
+            <li className={'list-inline-item'}>
+              <a href={github} className={'link link--icon'}>
+                <i className='icon icon--github' />
+                <span className={'sr-only'}>Github</span>
+              </a>
+            </li>
+            <li className={'list-inline-item'}>
+              <a href={linkedIn} className={'link link--icon'}>
+                <i className='icon icon--linkedin' />
+                <span className={'sr-only'}>LinkedIn</span>
+              </a>
+            </li>
+            <li className={'list-inline-item'}>
+              <a href={`mailto:${email}`}>
+                {email}
+              </a>
+            </li>
           </ul>
         </div>
       </div>

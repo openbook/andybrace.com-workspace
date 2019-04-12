@@ -10,13 +10,13 @@ class Header extends React.Component {
         render={data => {
           const { title, description, links, role } = data.site.siteMetadata;
           return (
-            <header id="header">
+            <header id="header" className="blue">
               <div className="inner">
                 <h1 className='site-title'>{title}</h1>
                 <h2>{role}</h2>
                 <p>{description}</p>
+                <HeaderLinks links={links} />
               </div>
-              <HeaderLinks links={links} />
             </header>
           )
         }}

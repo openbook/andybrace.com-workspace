@@ -1,0 +1,30 @@
+import { Heading, ProjectsContainer, Grid, GridCol, ReadMore } from '../components';
+
+<Heading tag='h2' className='subheading h5' text='Projects' />
+
+<ProjectsContainer number={2} />
+<ReadMore path='/projects' />
+
+<Heading tag='h2' className='subheading h5' text='What I do' />
+
+<Grid>
+    <GridCol className='col-6 col-sm-12'>
+        <dl>
+            <dt><strong>Front-end</strong></dt>
+            <dd>Javascript, ES6, React, Gatsby, Grunt, Webpack, CSS, SASS</dd>
+            <dt><strong>Back-end</strong></dt>
+            <dd>NodeJS, PHP, Elasticsearch, Postgres, MySQL</dd>
+            <dt><strong>Planning</strong></dt>
+            <dd>System architecture, Sketch, Agile</dd>
+        </dl>
+    </GridCol>
+    <GridCol className='col-6 col-sm-12'>
+        <dl>
+            <dt><strong>CMS</strong></dt>
+            <dd>Drupal, Contentful</dd>
+            <dt><strong>Dev Ops</strong></dt>
+            <dd>Docker, Ansible, Vagrant, AWS</dd>
+        </dl>
+    </GridCol>
+</Grid>
+<ReadMore path='/about' />

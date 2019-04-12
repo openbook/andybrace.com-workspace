@@ -8,8 +8,8 @@ module.exports = {
     role: `Full-stack web developer based in London`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     links: {
-      github: `openbook`,
-      linkedIn: 'openbook',
+      github: `https://github.com/openbook`,
+      linkedIn: 'https://linkedin.com/in/andrewbrace/',
       email: 'hello@openbook.uk.com'
     },
   },
@@ -34,6 +34,9 @@ module.exports = {
     {
       resolve: `gatsby-mdx`,
       options: {
+        defaultLayouts: {
+          default: require.resolve('./src/components/Layout/index.js')
+        },
         extensions: [`.mdx`, `.md`],
         plugins: [
           {
@@ -61,6 +64,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -70,9 +74,9 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-plugin-page-creator`,
+      resolve: 'gatsby-plugin-page-creator',
       options: {
-        path: path.dirname(require.resolve(`./src/pages`))
+        path: `${__dirname}/src/pages`
       }
     }
   ],

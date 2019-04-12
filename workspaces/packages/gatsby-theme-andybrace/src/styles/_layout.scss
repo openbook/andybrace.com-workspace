@@ -7,22 +7,47 @@
   -ms-align-items: -ms-flex-end;
   align-items: flex-end;
   padding: 8em 4em;
+  width: 49%;
+  height: 100%;
+  position: fixed;
 }
 
-#___gatsby,
-#___gatsby > div {
-  height: 100%;
+#main {
+  margin-left: 51%;
+  max-width: 50em;
+  padding: 8em 4em 4em;
+  width: 51%;
 }
 
-.main {
-  padding-left: 0;
-  height: 100%;
-}
-
-.h100 {
-  height: 100%;
+nav, .navbar {
+  .navbar-section {
+    justify-content: flex-end;
+  }
+  .navbar-item {
+    &:not(:last-child) {
+      margin-right: .8em;
+    }
+  }
 }
 
 .blue {
   background-color: $primary-color;
+}
+
+@media (max-width: 980px) {
+  #header {
+    left: auto;
+    padding: 6em 4em;
+    position: relative;
+    text-align: center;
+    top: auto;
+    width: 100%;
+    display: block;
+  }
+
+  #main {
+    margin: 0;
+    padding: 6em 4em;
+    width: 100%;
+  }
 }

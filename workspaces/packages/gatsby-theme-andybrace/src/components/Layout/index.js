@@ -1,23 +1,23 @@
 import React from 'react'
-
-import Header from '../Header'
+import { MDXProvider } from '@mdx-js/tag';
+import { Header, Navbar, SEO } from '../index'
+import { Location } from '@reach/router'
 
 class Template extends React.Component {
   render() {
     const { children } = this.props
 
     return (
-      <div className="container main">
-        <div className="columns col-gapless h100">
-          <div className="column col-6 col-sm-12 blue h100">
-            <Header />
-          </div>
-          <div className="column col-6 col-sm-12">
-
-            {children}
-          </div>
+      <MDXProvider>
+        <Location>
+          {({ location }) => <SEO location={location}/>}
+        </Location>
+        <Header />
+        <div id='main'>
+          <Navbar />
+          {children}
         </div>
-      </div>
+      </MDXProvider>
     )
   }
 }
