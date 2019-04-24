@@ -31,6 +31,44 @@
   }
 }
 
+@mixin spacing($size: $unit-1) {
+
+  .spacing-bottom {
+    margin-bottom: $size !important;
+  }
+
+  .spacing-left {
+    margin-left: $size !important;
+  }
+
+  .spacing-right {
+    margin-right: $size !important;
+  }
+
+  .spacing-top {
+    margin-top: $size !important;
+  }
+}
+
+@mixin spacing-variant($id: 1, $size: $unit-1) {
+
+  .spacing-bottom--#{$id} {
+    margin-bottom: $size !important;
+  }
+
+  .spacing-left--#{$id} {
+    margin-left: $size !important;
+  }
+
+  .spacing-right--#{$id} {
+    margin-right: $size !important;
+  }
+
+  .spacing-top--#{$id} {
+    margin-top: $size !important;
+  }
+}
+
 // Padding utility mixin
 @mixin padding-variant($id: 1, $size: $unit-1) {
   .p-#{$id} {

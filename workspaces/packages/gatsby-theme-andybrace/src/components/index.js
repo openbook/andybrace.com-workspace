@@ -9,6 +9,7 @@ import Navbar from './Navbar';
 import ProjectsContainer from './ProjectsContainer';
 import ProjectSummary from './ProjectSummary';
 import ReadMore from './ReadMore';
+import Section from './Section';
 import SEO from './SEO';
 
 export {
@@ -21,5 +22,6 @@ export {
   ProjectsContainer,
   ProjectSummary,
   ReadMore,
+  Section,
   SEO
 };

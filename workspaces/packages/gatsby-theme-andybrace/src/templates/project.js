@@ -27,7 +27,7 @@ class ProjectTemplate extends React.Component {
         >
           {post.frontmatter.date}
         </p>
-        {post.frontmatter.image && <Img fluid={post.frontmatter.image.childImageSharp.fluid} />}
+        {post.frontmatter.image && <Img className={'spacing-bottom'} fluid={post.frontmatter.image.childImageSharp.fluid} />}
         <MDXRenderer>
           {post.code.body}
         </MDXRenderer>
@@ -81,7 +81,7 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "MMMM, YYYY")
         description
         image {
          childImageSharp {

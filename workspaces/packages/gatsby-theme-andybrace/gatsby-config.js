@@ -2,15 +2,14 @@ const path = require("path");
 
 module.exports = {
   siteMetadata: {
-    title: `Andy Brace`,
-    author: `Andy Brace`,
-    description: `I help scope, plan, prototype and deliver agile web projects.`,
-    role: `Full-stack web developer based in London`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `Your title`,
+    author: `Author name`,
+    description: `Your description`,
+    role: `Your role`,
     links: {
-      github: `https://github.com/openbook`,
-      linkedIn: 'https://linkedin.com/in/andrewbrace/',
-      email: 'hello@openbook.uk.com'
+      github: `https://github.com/youraccount`,
+      linkedIn: 'https://linkedin.com/in/youraccount/',
+      email: 'your@email.com'
     },
   },
   plugins: [

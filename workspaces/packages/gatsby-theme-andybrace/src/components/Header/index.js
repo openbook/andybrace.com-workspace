@@ -11,7 +11,7 @@ class Header extends React.Component {
           const { title, description, links, role } = data.site.siteMetadata;
           return (
             <header id="header" className="blue">
-              <div className="inner">
+              <div className="inner col-ml-auto">
                 <h1 className='site-title'>{title}</h1>
                 <h2>{role}</h2>
                 <p>{description}</p>

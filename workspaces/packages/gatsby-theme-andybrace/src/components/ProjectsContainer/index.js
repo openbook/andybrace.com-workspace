@@ -45,7 +45,7 @@ const ProjectsContainer = ({ number }) => {
   return (
     <Grid>
       { allMdx.edges.slice(0, limit).map(item => (
-        <GridCol className={'col-6 col-sm-12'}>
+        <GridCol className={'col-6 col-sm-12 spacing-bottom--sm'}>
           <ProjectSummary
             image={item.node.frontmatter.image ? item.node.frontmatter.image.childImageSharp.fluid : null}
             title={item.node.frontmatter.title}
