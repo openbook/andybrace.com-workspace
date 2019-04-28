@@ -10,6 +10,7 @@ import ProjectsContainer from './ProjectsContainer';
 import ProjectSummary from './ProjectSummary';
 import ReadMore from './ReadMore';
 import Section from './Section';
+import SkillList from './SkillList';
 import SEO from './SEO';
 
 export {
@@ -23,5 +24,6 @@ export {
   ProjectSummary,
   ReadMore,
   Section,
+  SkillList,
   SEO
 };

@@ -19,15 +19,13 @@ class ProjectTemplate extends React.Component {
           description={post.frontmatter.description || post.excerpt}
           location={'test'}
         />
-        <h1>{post.frontmatter.title}</h1>
-        <p
-          style={{
-            display: `block`,
-          }}
+        <h2 className={'h1 spacing-bottom--sm'}>{post.frontmatter.title}</h2>
+        <p className={'spacing-bottom'}
         >
           {post.frontmatter.date}
         </p>
         {post.frontmatter.image && <Img className={'spacing-bottom'} fluid={post.frontmatter.image.childImageSharp.fluid} />}
+        {post.frontmatter.skills && <p><strong>Skills used:</strong> {post.frontmatter.skills}</p>}
         <MDXRenderer>
           {post.code.body}
         </MDXRenderer>
@@ -83,6 +81,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM, YYYY")
         description
+        skills
         image {
          childImageSharp {
            fluid(maxWidth: 630, quality: 100) {

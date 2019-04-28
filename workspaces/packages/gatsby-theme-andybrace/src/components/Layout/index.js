@@ -3,7 +3,7 @@ import { MDXProvider } from '@mdx-js/tag';
 import { Header, Navbar, SEO } from '../index'
 import { Location } from '@reach/router'
 
-class Template extends React.Component {
+class Layout extends React.Component {
   render() {
     const { children } = this.props
 
@@ -22,4 +22,4 @@ class Template extends React.Component {
   }
 }
 
-export default Template
+export default Layout

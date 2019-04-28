@@ -11,6 +11,10 @@ module.exports = {
       linkedIn: 'https://linkedin.com/in/youraccount/',
       email: 'your@email.com'
     },
+    skills: [{
+      'label': 'Front end',
+      'contents': 'Javascript, ES6, React, Gatsby, Grunt, Webpack, CSS, SASS'
+    }]
   },
   plugins: [
     {

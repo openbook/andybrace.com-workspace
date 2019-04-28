@@ -19,13 +19,15 @@ const SEO = ({ description, lang, meta, keywords, title, location }) => {
             title
             description
             author
+            role
           }
         }
       }
     `
-  )
+  );
 
   let locationTitle;
+  let titleTemplate = `%s | ${site.siteMetadata.title}`;
 
   switch (location.pathname) {
     case "/about":
@@ -35,14 +37,15 @@ const SEO = ({ description, lang, meta, keywords, title, location }) => {
       locationTitle = 'Projects';
       break;
     case "/":
-      locationTitle = site.siteMetadata.title;
+      locationTitle = `${site.siteMetadata.title} - ${site.siteMetadata.role}`;
+      titleTemplate = `%s `;
       break;
     default:
       locationTitle = 'Page not found'
   }
 
-  const metaDescription = description || site.siteMetadata.description;
   let pageTitle = title || locationTitle;
+  const metaDescription = description || site.siteMetadata.description;
 
   return (
     <Helmet
@@ -50,7 +53,7 @@ const SEO = ({ description, lang, meta, keywords, title, location }) => {
         lang,
       }}
       title={pageTitle}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={titleTemplate}
       meta={[
         {
           name: `description`,

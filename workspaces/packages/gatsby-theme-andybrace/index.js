@@ -1,1 +1,1 @@
-export { Grid, Heading } from './src/components';
+export { Grid, Heading, Section } from './src/components';
