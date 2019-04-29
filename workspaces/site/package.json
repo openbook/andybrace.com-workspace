@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Andy Brace",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/openbook/andybrace.com-workspace/issues"
   },
   "dependencies": {
     "gatsby": "^2.0.117",
@@ -17,7 +17,7 @@
     "gh-pages": "^2.0.1",
     "prettier": "^1.16.4"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/openbook/andybrace.com-workspace",
   "keywords": [
     "gatsby"
   ],
@@ -25,12 +25,13 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/openbook/andybrace.com-workspace.git"
   },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop --host 0.0.0.0",
-    "deploy:github": "npm run build && node ./scripts/deploy-github",
+    "buildAndDeploy:github": "npm run build && node ./scripts/deploy-github",
+    "deploy:github": "node ./scripts/deploy-github",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
