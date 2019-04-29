@@ -4,10 +4,10 @@ const ghpages = require('gh-pages')
 ghpages.publish(
   'public',
   {
-    branch: 'develop',
+    branch: 'master',
     repo: 'https://github.com/openbook/andybrace.com-workspace.git',
   },
-  () => {
-    console.log('Deploy Complete!')
+  (outcome) => {
+    console.log('Deploy Complete!', outcome)
   }
 )
