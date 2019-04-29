@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "name": "andybrace-site",
+  "version": "1.0.0",
+  "workspaces": [
+    "site",
+    "packages/*"
+  ]
+}
