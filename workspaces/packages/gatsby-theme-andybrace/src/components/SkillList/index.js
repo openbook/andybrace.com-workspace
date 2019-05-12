@@ -17,11 +17,12 @@ const SkillList = () => {
       }
     `
   );
+  let skillList = [...site.siteMetadata.skills];
   return (
     <Grid>
       <GridCol className='col-6 col-sm-12'>
         <dl>
-          { site.siteMetadata.skills.splice(0,3).map(skill => (
+          { skillList.splice(0,3).map(skill => (
             <React.Fragment key={skill.label}>
               <dt><strong>{skill.label}</strong></dt>
               <dd>{skill.contents}</dd>
@@ -32,7 +33,7 @@ const SkillList = () => {
       </GridCol>
       <GridCol className='col-6 col-sm-12'>
         <dl>
-          { site.siteMetadata.skills.map(skill => (
+          { skillList.map(skill => (
               <React.Fragment key={skill.label}>
                 <dt><strong>{skill.label}</strong></dt>
                 <dd>{skill.contents}</dd>
