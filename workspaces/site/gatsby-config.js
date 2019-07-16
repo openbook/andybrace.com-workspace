@@ -13,7 +13,7 @@ module.exports = {
     skills: [
       {
         'label': 'Front-end',
-        'contents': 'Javascript, ES6, React, Gatsby, Grunt, Webpack, CSS, SASS'
+        'contents': 'Javascript, ES6, React, React Native, Gatsby, Grunt, Webpack, CSS, SASS'
       },
       {
         'label': 'Back-end',
@@ -29,7 +29,7 @@ module.exports = {
       },
       {
         'label': 'Dev Ops',
-        'contents': 'Docker, Ansible, Vagrant, AWS'
+        'contents': 'Docker, Ansible, Vagrant, AWS, Digital Ocean'
       }
     ]
   },
