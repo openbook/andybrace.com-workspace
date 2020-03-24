@@ -4,7 +4,7 @@ module.exports = {
     author: `Andy Brace`,
     description: `I help scope, plan, prototype and deliver agile web projects.`,
     role: `Full-stack web developer based in London`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://www.andybrace.com/`,
     links: {
       github: `https://github.com/openbook`,
       linkedIn: 'https://linkedin.com/in/andrewbrace/',
@@ -55,6 +55,12 @@ module.exports = {
       options: {
         path: `${__dirname}/content/assets`,
         name: `assets`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-103678811-1`,
       },
     },
   ]
